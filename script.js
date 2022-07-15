@@ -1,6 +1,5 @@
 // To get the keyboard key play the audio
 function keyPlaying(event){
-    console.log(event);
     const audio = document.querySelector(`audio[data-key="${event.code}"]`);
     const key = document.querySelector(`.key[data-key="${event.code}"]`)
     if(!audio) return; // if key press is not in the List, it will stop the function
