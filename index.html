@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Drum Kit</title>
 </head>
-<body>
-</body>
+    <body>
+        <main class="main">
+            <div data-key="65" class="key playing">
+            <h2>A</h2>
+            <p>CLAP</p>
+            </div>
+            <div data-key="83" class="key">
+                <h2>S</h2>
+                <p>HIHAT</p>
+            </div>
+            <div data-key="68" class="key">
+                <h2>D</h2>
+                <p>KICK</p>
+            </div>
+            <div data-key="70" class="key">
+                <h2>F</h2>
+                <p>OPENHAT</p>
+            </div>
+            <div data-key="71" class="key">
+                <h2>G</h2>
+                <p>BOOM</p>
+            </div>
+            <div data-key="72" class="key">
+                <h2>H</h2>
+                <p>RIDE</p>
+            </div>
+            <div data-key="74" class="key">
+                <h2>J</h2>
+                <p>SNARE</p>
+            </div>
+            <div data-key="75" class="key">
+                <h2>K</h2>
+                <p>TOM</p>
+            </div>
+            <div data-key="76" class="key">
+                <h2>L</h2>
+                <p>TINK</p>
+            </div>
+
+        </main>
+        <audio data-key="65" src="./sounds/clap.wav"></audio>
+        <audio data-key="83" src="./sounds/hihat.wav"></audio>
+        <audio data-key="68" src="./sounds/kick.wav"></audio>
+        <audio data-key="70" src="./sounds/openhat.wav"></audio>
+        <audio data-key="71" src="./sounds/boom.wav"></audio>
+        <audio data-key="72" src="./sounds/ride.wav"></audio>
+        <audio data-key="74" src="./sounds/snare.wav"></audio>
+        <audio data-key="75" src="./sounds/tom.wav"></audio>
+        <audio data-key="76" src="./sounds/tink.wav"></audio>
+    </body>
 </html>
