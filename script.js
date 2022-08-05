@@ -10,7 +10,8 @@ function keyPlaying(event){
 
 // To make key stop Playing
 function stopPlaying(event){
-    if(event.propertyName != "transform") return; 
+    // if transition is not transform property
+    if(event.propertyName != "transform") return;  
     this.classList.remove("playing");
 }
 
